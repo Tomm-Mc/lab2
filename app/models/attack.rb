@@ -6,7 +6,7 @@ class  Attack < ApplicationRecord
 
     def dif_edades
         if monster.scare_level > 5 && Date.today - victim.birthdate < 6574
-            errors.add("Esto es cualquiera")
+            errors.add("Not possible")
         end
     end
 
