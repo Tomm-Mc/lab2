@@ -1,6 +1,6 @@
 class  Attack < ApplicationRecord
-    belongs_to :monster
-    belongs_to :victim
+    belongs_to :monster, dependent: :destroy
+    belongs_to :victim, dependent: :destroy
 
     validate :dif_edades
 
